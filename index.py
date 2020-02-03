@@ -8,7 +8,7 @@ server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
 
 #Next, log in to the server
-server.login("gmail", "password)
+server.login("gmail", "password")
 
 msg = "Tech word is in Sky news"
 
@@ -20,6 +20,6 @@ for tWord in techWord:          # Print all occurrences
     #print(tWord.get_text())
     if "tech" in tWord.get_text():
         #print("Tech")
-        server.sendmail("sender", "reciever", msg)
+        server.sendmail("sender", "receiver", msg)
     else:
         print("not")
